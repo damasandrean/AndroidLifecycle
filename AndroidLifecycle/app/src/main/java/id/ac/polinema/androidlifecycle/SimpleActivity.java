@@ -10,18 +10,19 @@ import android.widget.TextView;
 public class SimpleActivity extends AppCompatActivity {
 
     private EditText nameInput;
-    private TextView outputtext;
+    private TextView outputText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_simple);
         nameInput = findViewById(R.id.input_name);
-        outputtext = findViewById(R.id.text_output);
+        outputText = findViewById(R.id.text_output);
     }
+
 
     public void handleSubmit(View view) {
         String name = nameInput.getText().toString();
-        outputtext.setText("Hello" + name);
+        outputText.setText("Hello " + name);
     }
 }
