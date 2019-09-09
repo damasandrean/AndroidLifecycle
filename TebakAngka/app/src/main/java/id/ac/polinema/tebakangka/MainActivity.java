@@ -55,6 +55,6 @@ public class MainActivity extends AppCompatActivity {
 		number_input.setText("");
 		initRandomNumber();
 		Toast.makeText(this, ""+random,Toast.LENGTH_SHORT).show();
-		
+		guess_button.setEnabled(true);
 	}
 }
