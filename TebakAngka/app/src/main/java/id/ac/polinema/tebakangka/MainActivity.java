@@ -51,10 +51,10 @@ public class MainActivity extends AppCompatActivity {
 	}
 
 	public void handleReset(View view) {
-		// TODO: Reset 
+		// TODO: Reset tampilan
 		number_input.setText("");
 		initRandomNumber();
 		Toast.makeText(this, ""+random,Toast.LENGTH_SHORT).show();
-
+		
 	}
 }
